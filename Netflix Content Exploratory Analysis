@@ -1,0 +1,12 @@
+Netflix Content Exploratory Analysis
+A comprehensive exploratory data analysis (EDA) of thousands of movies and TV shows, to understand content distribution by type, country, and release year.
+
+Process
+Dropped unnecessary columns and handled missing values.
+Exploded the multi-value country column into a separate row per country.
+Standardized the type column and converted the date column to a proper datetime format.
+Classified content as "Recent / Old" based on release year (2018 as the cutoff).
+Key Insights
+Movies represent about 70% of total content compared to TV shows.
+The United States leads content-producing countries, followed by India by a wide margin.
+A sharp, noticeable growth in content added after 2018.
