@@ -1,0 +1,17 @@
+Cleaned raw data for 800+ companies worldwide using SQL, then built an interactive 
+ Power BI dashboard showing layoff trends by company, industry, country, and time.
+
+Data Cleaning (SQL)
+Created staging tables and preserved an original copy of the data.
+Removed duplicates using ROW_NUMBER() OVER(PARTITION BY...).
+Standardized company names, country names, and industry categories (e.g. unifying "Crypto" variants).
+Converted the date column from text to DATE, handled nulls via self-join, and dropped rows with no analytical value.
+
+Exploratory Analysis
+Monthly rolling total of layoffs using a Window Function.
+Ranked the top 5 companies by layoffs each year using DENSE_RANK().
+
+Key Findings
+The "Finance" sector recorded the highest number of layoff events.
+Amazon, Google, and Ericsson topped the list of companies by total employees laid off.
+2022 accounted for the highest share of total layoffs at 41.66%.
